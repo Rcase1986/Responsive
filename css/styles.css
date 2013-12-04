@@ -1,0 +1,98 @@
+/* Stylesheet */
+
+/*Boxes*/
+
+.container{
+	
+	background:lightblue;
+	float:left;
+	max-width:960px;
+	width:95%;
+	margin:0 auto;
+}
+
+section{
+	background:violet;
+	width:72.92%;
+	float:left;
+}
+
+header{
+	clear:right;
+}
+
+nav{
+	background:pink;
+	float:left;
+	width:50%;
+}
+
+aside{
+	background:lightgreen;
+	width:25%;
+	float:right;
+}
+
+aside img{
+	width:100%;
+}
+
+article{
+	width:75%;
+	float:left;
+}
+
+ul{
+	list-style:none;
+}
+
+/*Typo*/
+
+h1{
+	font-size:2.25em;
+}
+
+h2{
+	font-size:1.5em;
+}
+
+li{
+	font-style:.75em;
+	font-weight:bold;
+}
+
+p{
+	font-size:1em;
+}
+
+
+/*DeskTop*/
+
+@media screen and (max-width:1024px) {
+        
+        body{background:red;}
+        
+        } /* End of Desktop*/
+
+@media screen and (max-width:768px) {
+        
+        body{background:blue;}
+	
+        
+        } /* End of tablet*/
+
+@media screen and (max-width:480px) {
+        
+      body{background:green;}
+      aside{float:none;}
+	h2{display:none;}
+	section{width:100%;}
+	aside{width:100%}
+	article{width:100%;}
+	nav{display:none;}
+
+
+
+        }
+        
+        } /* End of phone*/
